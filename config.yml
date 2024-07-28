@@ -1,0 +1,37 @@
+VERBOSE: True
+
+MODEL:
+  SESSION: 'de_highlight'
+  INPUT: 'specular'
+  TARGET: 'diffuse'
+
+# Optimization arguments.
+OPTIM:
+  BATCH_SIZE: 8
+  NUM_EPOCHS: 100
+  LR_INITIAL: 2e-4
+  LR_MIN: 1e-6
+  SEED: 3407
+  WANDB: False
+
+TRAINING:
+  VAL_AFTER_EVERY: 1
+  RESUME: False
+  WEIGHT: ''
+  PS_W: 256
+  PS_H: 256
+  TRAIN_DIR: '' # path to training data
+  VAL_DIR: ''     # path to validation data
+  SAVE_DIR: ''          # path to save models and images
+  ORI: False
+  LOG_FILE: ''
+
+TESTING:
+  WEIGHT: ''
+  TEST_DIR: ''     # path to testing data
+  SAVE_IMAGES: True
+  RESULT_DIR: ''
+  LOG_FILE: ''
+
+LOG:
+  LOG_DIR: ''
