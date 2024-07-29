@@ -6,7 +6,7 @@
 
 **University of Macau, SIAT CAS, Huizhou University, Baoshan University**
 
-2024 ACM Multimedia (ACM MM 2024)
+2024 ACM International Conference on Multimedia (ACM MM 2024)
 
 ## [Code](https://github.com/CXH-Research/DHAN-SHR) | [Benchmark dataset (Kaggle)](https://www.kaggle.com/datasets/xuhangc/acm-mm-2024-dehighlight-dataset)
 
