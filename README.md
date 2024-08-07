@@ -52,5 +52,13 @@ This work was supported in part by the Science and Technology Development Fund, 
 If you find our work helpful for your research, please cite:
 
 ```bib
+@inproceedings{
+  guo2024dualhybrid,
+  title={Dual-Hybrid Attention Network for Specular Highlight Removal},
+  author={Xiaojiao Guo and Xuhang Chen and Shenghong Luo and Shuqiang Wang and Chi-Man Pun},
+  booktitle={ACM Multimedia 2024},
+  year={2024},
+  url={https://openreview.net/forum?id=9D8waGSbCZ}
+}
 ```
 
