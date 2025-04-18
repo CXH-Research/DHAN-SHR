@@ -40,7 +40,7 @@ If you have difficulties with the usage of `accelerate`, please refer to [Accele
 Please download our pre-trained models [here](https://github.com/CXH-Research/DHAN-SHR/releases/tag/Weight) and specify TRAIN_DIR, VAL_DIR and SAVE_DIR in section TESTING in `config.yml`, then execute:
 
 ```bash
-python infer.py
+python test.py
 ```
 
 # 💗 Acknowledgement
