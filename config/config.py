@@ -75,7 +75,6 @@ class Config(object):
 
         self._C.TRAINING = CN()
         self._C.TRAINING.VAL_AFTER_EVERY = 1
-        self._C.TRAINING.RESUME = False
         self._C.TRAINING.TRAIN_DIR = '../dataset/train'
         self._C.TRAINING.VAL_DIR = '../dataset/val'
         self._C.TRAINING.SAVE_DIR = 'checkpoints'
@@ -83,13 +82,13 @@ class Config(object):
         self._C.TRAINING.PS_H = 256
         self._C.TRAINING.ORI = False
         self._C.TRAINING.LOG_FILE = 'log.txt'
-        self._C.TRAINING.WEIGHT = './checkpoints/model_epoch_68.pth'
 
         self._C.TESTING = CN()
         self._C.TESTING.WEIGHT = './checkpoints/model_epoch_68.pth'
         self._C.TESTING.SAVE_IMAGES = False
         self._C.TESTING.LOG_FILE = 'log.txt'
         self._C.TESTING.TEST_DIR = '../dataset/test'
+        self._C.TESTING.ORI = True
         self._C.TESTING.RESULT_DIR = '../result'
 
         self._C.LOG = CN()

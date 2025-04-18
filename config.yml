@@ -1,7 +1,7 @@
 VERBOSE: True
 
 MODEL:
-  SESSION: 'de_highlight'
+  SESSION: 'DHAN-SHR'
   INPUT: 'specular'
   TARGET: 'diffuse'
 
@@ -16,22 +16,21 @@ OPTIM:
 
 TRAINING:
   VAL_AFTER_EVERY: 1
-  RESUME: False
-  WEIGHT: ''
   PS_W: 256
   PS_H: 256
-  TRAIN_DIR: '' # path to training data
-  VAL_DIR: ''     # path to validation data
-  SAVE_DIR: ''          # path to save models and images
+  TRAIN_DIR: './dataset/train/' # path to training data
+  VAL_DIR: './dataset/val/'     # path to validation data
+  SAVE_DIR: './checkpoints/'          # path to save models
   ORI: False
-  LOG_FILE: ''
+  LOG_FILE: 'training.txt'
 
 TESTING:
-  WEIGHT: ''
-  TEST_DIR: ''     # path to testing data
+  WEIGHT: './checkpoints/latest.pth'
+  TEST_DIR: './dataset/test/'     # path to testing data
+  ORI: True
   SAVE_IMAGES: True
-  RESULT_DIR: ''
-  LOG_FILE: ''
+  RESULT_DIR: './results/'
+  LOG_FILE: 'testing.txt'
 
 LOG:
-  LOG_DIR: ''
+  LOG_DIR: './log/'

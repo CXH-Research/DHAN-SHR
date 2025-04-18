@@ -22,6 +22,8 @@ def save_checkpoint(state, epoch, model_name, outdir):
         os.makedirs(outdir)
     checkpoint_file = os.path.join(outdir, model_name + '_' + 'epoch_' + str(epoch) + '.pth')
     torch.save(state, checkpoint_file)
+    checkpoint_file = os.path.join(outdir, 'latest.pth')
+    torch.save(state, checkpoint_file)
 
 
 def load_checkpoint(model, weights):
